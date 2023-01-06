@@ -4,12 +4,10 @@ from .api import router
 
 tags_metadata = [
     {
-        'name': 'auth',
-        'description': 'Авторизация и аутентификация'
+        'name': 'Authorization and authentication',
     },
     {
-        'name': 'operations',
-        'description': 'Work with operations'
+        'name': 'Operations',
     },
 ]
 
