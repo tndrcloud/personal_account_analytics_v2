@@ -35,7 +35,6 @@ If you run programm like a service check yourself.
 2. Напишите следующее в созданный daemon-файл:
 
 <code>
-    <code>
 
        [Unit]
         Description=Telegram bot
@@ -49,7 +48,6 @@ If you run programm like a service check yourself.
        [Install]
         WantedBy=multi-user.target
 
-    </code>
 </code>
     
 3. Теперь запустите daemon выполняя команды последовательно:
