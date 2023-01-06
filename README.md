@@ -35,17 +35,19 @@ If you run programm like a service check yourself.
 2. Напишите следующее в созданный daemon-файл:
  
 <code>
-   [Unit]
-    Description=REST API service for analytics personal account
-    After=multi-user.target
+ 
+[Unit]
+ Description=REST API service for analytics personal account
+ After=multi-user.target
 
-   [Service]
-    Type=idle
-    ExecStart=/usr/bin/python3 /path/to/script/__main__.py
-    Restart=always
+[Service]
+ Type=idle
+ ExecStart=/usr/bin/python3 /path/to/script/__main__.py
+ Restart=always
 
-   [Install]
-    WantedBy=multi-user.target
+[Install]
+ WantedBy=multi-user.target
+ 
 </code>
  
 3. Теперь запустите daemon выполняя команды последовательно:
