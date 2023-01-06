@@ -47,12 +47,10 @@ If you run programm like a service check yourself.
 
      [Install]
       WantedBy=multi-user.target
-</code>
+ 
+  </code>
 
-  
-    
 3. Теперь запустите daemon выполняя команды последовательно:
-  
  - *sudo systemctl daemon-reload*
  - *sudo systemctl enable account_analytics.service*
  - *sudo systemctl start account_analytics.service*
