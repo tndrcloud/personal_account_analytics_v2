@@ -46,9 +46,9 @@ If you run programm like a service check yourself.
       Restart=always
 
      [Install]
-      WantedBy=multi-user.target
+      WantedBy=multi-user.target</code>
 
-  </code>
+  
     
 3. Теперь запустите daemon выполняя команды последовательно:
   
