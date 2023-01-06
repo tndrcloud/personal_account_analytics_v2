@@ -35,7 +35,21 @@ If you run programm like a service check yourself.
 2. Напишите следующее в созданный daemon-файл:
 
 <code>
-add
+    <code>
+
+       [Unit]
+        Description=Telegram bot
+        After=multi-user.target
+
+       [Service]
+        Type=idle
+        ExecStart=/usr/bin/python3 /path/to/script/bot.py
+        Restart=always
+
+       [Install]
+        WantedBy=multi-user.target
+
+    </code>
 </code>
     
 3. Теперь запустите daemon выполняя команды последовательно:
