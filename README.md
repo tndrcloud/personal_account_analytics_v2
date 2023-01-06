@@ -55,4 +55,3 @@ If you run programm like a service check yourself.
  - *sudo systemctl daemon-reload*
  - *sudo systemctl enable account_analytics.service*
  - *sudo systemctl start account_analytics.service*
- - 
