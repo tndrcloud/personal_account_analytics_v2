@@ -34,21 +34,21 @@ If you run programm like a service check yourself.
 1. Создайте daemon-файл *sudo touch /etc/systemd/system/account_analytics.service*
 2. Напишите следующее в созданный daemon-файл:
 
-   <code>
- 
-      [Unit]
-       Description=Telegram bot
-       After=multi-user.target
+    <code>
 
-      [Service]
-       Type=idle
-       ExecStart=/usr/bin/python3 /path/to/script/bot.py
-       Restart=always
+       [Unit]
+        Description=Telegram bot
+        After=multi-user.target
 
-      [Install]
-       WantedBy=multi-user.target
- 
-   </code>
+       [Service]
+        Type=idle
+        ExecStart=/usr/bin/python3 /path/to/script/bot.py
+        Restart=always
+
+       [Install]
+        WantedBy=multi-user.target
+
+    </code>
    
 3. Теперь запустите daemon выполняя команды последовательно:
   
