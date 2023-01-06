@@ -34,7 +34,9 @@ If you run programm like a service check yourself.
 1. Создайте daemon-файл *sudo touch /etc/systemd/system/account_analytics.service*
 2. Напишите следующее в созданный daemon-файл:
 
-<code>     [Unit]
+   <code>
+
+       [Unit]
         Description=Telegram bot
         After=multi-user.target
 
@@ -44,8 +46,10 @@ If you run programm like a service check yourself.
         Restart=always
 
        [Install]
-        WantedBy=multi-user.target     </code>
+        WantedBy=multi-user.target
  
+   </code>
+
 3. Теперь запустите daemon выполняя команды последовательно:
  - *sudo systemctl daemon-reload*
  - *sudo systemctl enable account_analytics.service*
