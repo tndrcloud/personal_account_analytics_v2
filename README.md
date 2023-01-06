@@ -36,17 +36,17 @@ If you run programm like a service check yourself.
 
     <code>
 
-        [Unit]
-         Description=Telegram bot
-         After=multi-user.target
+      [Unit]
+       Description=Telegram bot
+       After=multi-user.target
 
-        [Service]
-         Type=idle
-         ExecStart=/usr/bin/python3 /path/to/script/bot.py
-         Restart=always
+      [Service]
+       Type=idle
+       ExecStart=/usr/bin/python3 /path/to/script/bot.py
+       Restart=always
 
-        [Install]
-         WantedBy=multi-user.target
+      [Install]
+       WantedBy=multi-user.target
 
     </code>
     
