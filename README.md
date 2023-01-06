@@ -46,7 +46,7 @@ If you run programm like a service check yourself.
       Restart=always
 
      [Install]
-      WantedBy=multi-user.target</code>
+      WantedBy=multi-user.target </code>
 
   
     
