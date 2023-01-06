@@ -35,7 +35,7 @@ If you run programm like a service check yourself.
 2. Напишите следующее в созданный daemon-файл:
 
 <code>
-add 
+add
 </code>
     
 3. Теперь запустите daemon выполняя команды последовательно:
