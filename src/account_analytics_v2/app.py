@@ -5,7 +5,7 @@ from .api import router
 tags_metadata = [
     {
         'name': 'auth',
-        'description': 'Authorization and authentication'
+        'description': 'Авторизация и аутентификация'
     },
     {
         'name': 'operations',
@@ -15,8 +15,8 @@ tags_metadata = [
 
 
 app = FastAPI(
-    title='Workshop',
-    description='Service private finance data',
+    title='Анализатор ЛК ВАТС',
+    description='REST API сервис для проверки корректности настроек и поиска ошибок в логах вызовов ЛК ВАТС',
     version='v2.0',
     openapi_tags=tags_metadata
 )
