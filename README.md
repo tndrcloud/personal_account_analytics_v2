@@ -30,7 +30,6 @@
   2. Напишите следующее в созданный daemon-файл:
   
    <code>
-    
     [Unit]
      Description=REST API service for analytics personal account
      After=multi-user.target
@@ -42,7 +41,6 @@
 
     [Install]
      WantedBy=multi-user.target
-     
    </code>
    
   3. Теперь запустите daemon выполняя команды последовательно:
